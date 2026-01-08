@@ -27,13 +27,13 @@ jobs:
 
       - name: Build & Push image
         run: |
-          IMAGE="${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/streamlit-repo/sunny:latest"
+          IMAGE="${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sunny-repo/sunny:latest"
           docker build -t "$IMAGE" .
           docker push "$IMAGE"
 
       - name: Deploy to Cloud Run
         run: |
-          IMAGE="${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/streamlit-repo/sunny:latest"
+          IMAGE="${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/sunny-repo/sunny:latest"
           gcloud run deploy sunny-app \
             --image "$IMAGE" \
             --region "${{ secrets.GCP_REGION }}" \
