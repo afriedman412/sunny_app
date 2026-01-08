@@ -33,7 +33,7 @@ st.markdown("### Semantic Separation Visualization")
 # -----------------------------
 # Data loading
 # -----------------------------
-DEFAULT_PATH = "src/data/umap_df_for_js_plot_120825.csv"
+DEFAULT_PATH = "data/umap_df_for_js_plot_120825.csv"
 
 df = None
 if os.path.exists(DEFAULT_PATH):
