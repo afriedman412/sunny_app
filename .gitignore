@@ -1,13 +1,3 @@
-.zip
-*.csv
-*-key.json
-nba-2019-2020-5cc03a383d9f.json
-this_will_fail
-.data/
-*sked_*.txt
-sked_a_stuff/
-wif.sh
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
