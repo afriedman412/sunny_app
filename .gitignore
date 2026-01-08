@@ -71,8 +71,5 @@ dmypy.json
 # ruff
 .ruff_cache/
 
-# textacy
-data/
-
 # documentation
 docs/build/*
